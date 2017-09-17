@@ -14,22 +14,22 @@ include "device.php";
             <div class="ui-corner-all">
                 <div class="ui-bar-a custom-corners"><center>Daftar</center></div>
                 <div class="ui-body ui-body-a">
-                    <form method="post" action="">
+                    <form method="post" action="signpro.php">
                         <label>NIM</label>
                         <input class="ui-input-text" type="text" name="nim">
                         <label>Nama</label>
-                        <input type="text" name="username">
+                        <input type="text" name="nama">
                         <label>email</label>
-                        <input type="email" name="username">
+                        <input type="email" name="email">
                         <label>Program Studi</label>
-                        <select>
-                            <option>S1 Pend. Teknologi Innformasi</option>
-                            <option>S1 Teknolosi Informasi</option>
-                            <option>S1 Sistem Informasi</option>
-                            <option>D3 Manajemen Informatika</option>
+                        <select name="prodi">
+                            <option value="S1 Pend. Teknologi Innformasi ">S1 Pend. Teknologi Innformasi</option>
+                            <option value="S1 Teknologi Innformasi">S1 Teknologi Innformasi</option>
+                            <option value="S1 Sistem Informasi">S1 Sistem Informasi</option>
+                            <option value="D3 Manajemen Informatika">D3 Manajemen Informatika</option>
                         </select>
                         <label>Password</label>
-                        <input type="password" name="username">
+                        <input type="password" name="password">
                         <input class="ui-btn ui-btn-b" data-role="input" type="submit" value="Daftar" data-theme="b">
                     </form>
                 </div>
