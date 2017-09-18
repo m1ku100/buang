@@ -41,7 +41,7 @@ $no++;// mewakili data dari nomor 1
 while ($data = $sql->fetch()) {
     ?>
         
-    <li><a href="index.html"><?php echo $data['nama']; ?> <br><?php echo $data['prodi']?> </a></li>
+    <li><a href="player.php?id=<?php echo $data['id'] ?>"><?php echo $data['nama']; ?> <br><?php echo $data['prodi']?> </a></li>
 
 <?php }
 $no++;
