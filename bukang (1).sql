@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 17, 2017 at 03:45 PM
+-- Generation Time: Sep 18, 2017 at 02:15 PM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
 
@@ -95,24 +95,25 @@ CREATE TABLE `user` (
   `password` varchar(30) NOT NULL,
   `alamat_asal` text NOT NULL,
   `alamat_tinggal` text NOT NULL,
-  `foto` varchar(45) NOT NULL
+  `foto` varchar(45) NOT NULL,
+  `notelp` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `nim`, `nama`, `prodi`, `email`, `password`, `alamat_asal`, `alamat_tinggal`, `foto`) VALUES
-(1, '15050623027', 'ilham puji saputra', 'D3 Manajemen Informatika', 'email.email@email.com', '123456', 'jauh', 'dekat', ''),
-(2, '123', 'saya saya', '', 'email.100@email.com', '123456', '', '', ''),
-(3, '1232123', 'jkjksdsdjk', '', 'e@g.vom', '111', '', '', ''),
-(4, '12323', 'dfs', '', 'e@g.vsom', 'asdasd', '', '', ''),
-(5, 'ewrwer', 'werwer', '', 'ewr@gh.mo', 'asdasd', '', '', ''),
-(6, '4654', 'llasdj', '', 'l@gsm.om', '451236', '', '', ''),
-(7, 'qwe', 'qweqwe', 'S1 Sistem Informasi', 'sd@as.fgh', 'asasdasd', '', '', ''),
-(8, '15050623012', 'Derry Ajeng Saraswati', 'D3 Manajemen Informatika', 'Derrysaraswati@mhs.unesa.ac.id', 'a1s2d3f4g5', '', '', ''),
-(9, '15050623016', 'Fiqy Ainuzzaqy', 'D3 Manajemen Informatika', 'fiqy@mhs.unesa.ac.id', '15050623016', '', '', ''),
-(10, '', '', '', '', '', '', '', '');
+INSERT INTO `user` (`id`, `nim`, `nama`, `prodi`, `email`, `password`, `alamat_asal`, `alamat_tinggal`, `foto`, `notelp`) VALUES
+(1, '15050623027', 'ilham puji saputra', 'D3 Manajemen Informatika', 'email.email@email.com', '123456', 'jauh', 'dekat', '', ''),
+(2, '123', 'saya saya', '', 'email.100@email.com', '123456', '', '', '', ''),
+(3, '1232123', 'jkjksdsdjk', '', 'e@g.vom', '111', '', '', '', ''),
+(4, '12323', 'dfs', '', 'e@g.vsom', 'asdasd', '', '', '', ''),
+(5, 'ewrwer', 'werwer', '', 'ewr@gh.mo', 'asdasd', '', '', '', ''),
+(6, '4654', 'llasdj', '', 'l@gsm.om', '451236', '', '', '', ''),
+(7, 'qwe', 'qweqwe', 'S1 Sistem Informasi', 'sd@as.fgh', 'asasdasd', '', '', '', ''),
+(8, '15050623012', 'Derry Ajeng Saraswati', 'D3 Manajemen Informatika', 'Derrysaraswati@mhs.unesa.ac.id', 'a1s2d3f4g5', '', '', '', ''),
+(9, '15050623016', 'Fiqy Ainuzzaqy', 'D3 Manajemen Informatika', 'fiqy@mhs.unesa.ac.id', '15050623016', '', '', '', ''),
+(10, '', '', '', '', '', '', '', '', '');
 
 --
 -- Indexes for dumped tables
