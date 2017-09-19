@@ -15,7 +15,7 @@ $data = $sql->fetch();
         <h2><?php
             echo $data['nama']?></h2>
         <br>
-        <form method="post" action="">
+        <form method="post" action="editpro.php">
         <ul data-role="listview" data-themes="b">
             <li><b><center>EDIT</center></b></li>
             <li><b>NIM</b><br><input value="<?php echo $data['nim']?>" disabled name="nim"></li>

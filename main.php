@@ -19,7 +19,7 @@ include "connect.php";
         <div data-role="main" class="ui-content">
 
             <?php
-            $sql = $koneksi->prepare("SELECT * FROM komentar ORDER BY id ASC ");
+            $sql = $koneksi->prepare("SELECT * FROM komentar ORDER BY id DESC ");
             $sql->execute(); //query jika filter dipilih
             $no = 0;
             $no++;// mewakili data dari nomor 1
